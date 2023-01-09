@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    private float speed = 5.0f;
+    private float speed = 15.0f;
     private float turnSpeed = 40f;
     private float horizontalInput;
     private float forwardInput;
+    private bool cameraToggle;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-
+        //cameraToggle = Input.GetButton()
         // Move the vehicle forward
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
